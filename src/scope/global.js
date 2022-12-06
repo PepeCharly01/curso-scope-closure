@@ -14,7 +14,7 @@ function frutaFavorita() {
 frutaFavorita();
 
 function paises () {
-    pais = 'Mexico';
+    pais = 'Mexico'; // Global
     console.log(pais);
 }
 paises();
