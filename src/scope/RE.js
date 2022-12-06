@@ -25,3 +25,7 @@ console.log(animal);
 
 const veiculos = [];
 veiculos.push("🚗");
+console.log(veiculos);
+
+veiculos.pop();
+console.log(veiculos);
