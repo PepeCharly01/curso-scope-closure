@@ -7,4 +7,4 @@ function saludo() {
     }
 }
 saludo();
-console.log(userName);
+console.log(userName); // de esta forma no puedes acceder a la variable afuera de la funcion
