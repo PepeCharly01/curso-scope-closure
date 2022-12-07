@@ -17,3 +17,26 @@ function myFunction() {
     return parent();
 }
 myFunction();
+
+// Son ejemplos de los closure y en este caso es una alcancia, el cual guarda los datos que le manden (monedas).
+
+function sumWithClosure(firstNum) {
+    let a = firstNum;
+    return function (secondNum) {
+      let b = secondNum;
+      if (!b) {
+        return a;
+      } else {
+        return a + b;
+      }
+    }
+  }
+
+  function sumWithClosure2(primerNumero) {
+    return function (segundoNumero) {
+        if (segundoNumero) {
+        return primerNumero + segundoNumero;
+        }
+        return primerNumero;
+    };
+  }
