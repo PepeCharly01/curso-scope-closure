@@ -16,3 +16,18 @@ const moneyBoxAna = moneyBox();
 moneyBoxAna(10);
 moneyBoxAna(25);
 moneyBoxAna(15);
+
+function createPetList() {
+    const petList = [];
+    return function (newPet) {
+      if (newPet) {
+        petList.push(newPet)
+      }
+      return petList;
+    };
+  }
+  const myPetList = createPetList();
+  
+  console.log(myPetList("michi"));
+  console.log(myPetList("firulais"));
+  console.log(myPetList());
